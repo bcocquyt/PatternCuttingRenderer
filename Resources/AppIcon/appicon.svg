@@ -1,0 +1,8 @@
+<svg width="456" height="456" xmlns="http://www.w3.org/2000/svg">
+  <rect width="456" height="456" fill="#512BD4"/>
+  <path d="M 120,150 L 120,180 C 120,210 130,240 150,260 L 150,350 L 200,350 L 200,260 C 220,240 230,210 230,180 L 230,150 C 230,140 220,130 210,130 L 140,130 C 130,130 120,140 120,150 Z" 
+        fill="white" stroke="white" stroke-width="2"/>
+  <path d="M 260,150 L 260,180 C 260,210 270,240 290,260 L 290,350 L 340,350 L 340,260 C 360,240 370,210 370,180 L 370,150 C 370,140 360,130 350,130 L 280,130 C 270,130 260,140 260,150 Z" 
+        fill="white" stroke="white" stroke-width="2"/>
+  <text x="228" y="420" font-family="Arial" font-size="48" text-anchor="middle" fill="white" font-weight="bold">PC</text>
+</svg>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Maui.Controls;assembly=SkiaSharp.Views.Maui.Controls"
+             x:Class="PatternCuttingRenderer.MainPage"
+             Title="Pattern Cutting Renderer">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+        <!-- Top Toolbar -->
+        <HorizontalStackLayout Grid.Row="0" Padding="10" Spacing="10" BackgroundColor="#512BD4">
+            <Button Text="Open SVG" 
+                    Clicked="OnPickFileClicked"
+                    BackgroundColor="#673AB7"
+                    TextColor="White" />
+            <Button Text="Zoom In" 
+                    Clicked="OnZoomInClicked"
+                    BackgroundColor="#673AB7"
+                    TextColor="White" />
+            <Button Text="Zoom Out" 
+                    Clicked="OnZoomOutClicked"
+                    BackgroundColor="#673AB7"
+                    TextColor="White" />
+            <Button Text="Reset View" 
+                    Clicked="OnResetViewClicked"
+                    BackgroundColor="#673AB7"
+                    TextColor="White" />
+        </HorizontalStackLayout>
+
+        <!-- SVG Canvas -->
+        <skia:SKCanvasView Grid.Row="1" 
+                          x:Name="skiaCanvas"
+                          PaintSurface="OnCanvasViewPaintSurface"
+                          Touch="OnCanvasTouch"
+                          EnableTouchEvents="True" />
+
+        <!-- Status Bar -->
+        <Label Grid.Row="2" 
+               x:Name="StatusLabel"
+               Text="Ready - Load an SVG file to begin"
+               Padding="10"
+               BackgroundColor="#F0F0F0"
+               TextColor="#333333" />
+    </Grid>
+
+</ContentPage>

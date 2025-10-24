@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <!-- Sample Cutting Pattern for a Simple Shirt Front -->
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">
+    Shirt Front Cutting Pattern
+  </text>
+  
+  <!-- Pattern Grid (optional background) -->
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#grid)" />
+  
+  <!-- Main Body Pattern Outline -->
+  <path d="M 200,100 
+           L 200,150 
+           C 200,200 220,250 250,280
+           L 250,700
+           C 250,750 270,800 300,850
+           L 300,950
+           L 500,950
+           L 500,850
+           C 530,800 550,750 550,700
+           L 550,280
+           C 580,250 600,200 600,150
+           L 600,100
+           C 600,80 580,60 560,60
+           L 240,60
+           C 220,60 200,80 200,100 Z"
+        fill="none" 
+        stroke="#2c3e50" 
+        stroke-width="3"
+        stroke-dasharray="10,5"/>
+  
+  <!-- Neckline -->
+  <path d="M 350,60 
+           C 350,100 370,120 400,120
+           C 430,120 450,100 450,60"
+        fill="none" 
+        stroke="#e74c3c" 
+        stroke-width="2"/>
+  
+  <!-- Shoulder Seam Lines -->
+  <line x1="200" y1="100" x2="250" y2="150" stroke="#3498db" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="600" y1="100" x2="550" y2="150" stroke="#3498db" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Center Line -->
+  <line x1="400" y1="60" x2="400" y2="950" stroke="#27ae60" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Armhole Curves -->
+  <path d="M 250,150 
+           C 280,180 320,200 350,200"
+        fill="none" 
+        stroke="#9b59b6" 
+        stroke-width="2"/>
+  
+  <path d="M 550,150 
+           C 520,180 480,200 450,200"
+        fill="none" 
+        stroke="#9b59b6" 
+        stroke-width="2"/>
+  
+  <!-- Side Seams -->
+  <line x1="250" y1="280" x2="250" y2="700" stroke="#f39c12" stroke-width="2"/>
+  <line x1="550" y1="280" x2="550" y2="700" stroke="#f39c12" stroke-width="2"/>
+  
+  <!-- Hem Line -->
+  <line x1="300" y1="950" x2="500" y2="950" stroke="#e67e22" stroke-width="3"/>
+  
+  <!-- Measurement Annotations -->
+  <g id="measurements">
+    <!-- Width measurement -->
+    <line x1="200" y1="400" x2="600" y2="400" stroke="#d35400" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+    <text x="400" y="390" font-family="Arial" font-size="14" text-anchor="middle" fill="#d35400">400mm</text>
+    
+    <!-- Length measurement -->
+    <line x1="650" y1="60" x2="650" y2="950" stroke="#d35400" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+    <text x="680" y="500" font-family="Arial" font-size="14" text-anchor="start" fill="#d35400">890mm</text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#d35400"/>
+    </marker>
+  </defs>
+  
+  <!-- Cut notches (small triangular marks) -->
+  <polygon points="250,300 260,300 255,290" fill="#2c3e50"/>
+  <polygon points="550,300 560,300 555,290" fill="#2c3e50"/>
+  <polygon points="250,600 260,600 255,590" fill="#2c3e50"/>
+  <polygon points="550,600 560,600 555,590" fill="#2c3e50"/>
+  
+  <!-- Grain line indicator -->
+  <g id="grainline">
+    <line x1="400" y1="200" x2="400" y2="800" stroke="#000" stroke-width="2"/>
+    <polygon points="400,200 395,215 405,215" fill="#000"/>
+    <polygon points="400,800 395,785 405,785" fill="#000"/>
+    <text x="420" y="500" font-family="Arial" font-size="12" fill="#000">GRAIN</text>
+  </g>
+  
+  <!-- Pattern Information Box -->
+  <g id="info">
+    <rect x="50" y="850" width="150" height="120" fill="#ecf0f1" stroke="#34495e" stroke-width="2"/>
+    <text x="60" y="875" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">Pattern Info:</text>
+    <text x="60" y="895" font-family="Arial" font-size="11" fill="#2c3e50">Size: Medium</text>
+    <text x="60" y="910" font-family="Arial" font-size="11" fill="#2c3e50">Scale: 1:1</text>
+    <text x="60" y="925" font-family="Arial" font-size="11" fill="#2c3e50">Seam: 15mm</text>
+    <text x="60" y="940" font-family="Arial" font-size="11" fill="#2c3e50">Fabric: Cotton</text>
+    <text x="60" y="955" font-family="Arial" font-size="11" fill="#2c3e50">Cut: 1x Front</text>
+  </g>
+  
+  <!-- Legend -->
+  <g id="legend">
+    <text x="50" y="750" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Legend:</text>
+    <line x1="50" y1="760" x2="90" y2="760" stroke="#2c3e50" stroke-width="3" stroke-dasharray="10,5"/>
+    <text x="100" y="765" font-family="Arial" font-size="10" fill="#333">Cutting Line</text>
+    
+    <line x1="50" y1="775" x2="90" y2="775" stroke="#e74c3c" stroke-width="2"/>
+    <text x="100" y="780" font-family="Arial" font-size="10" fill="#333">Neckline</text>
+    
+    <line x1="50" y1="790" x2="90" y2="790" stroke="#27ae60" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="100" y="795" font-family="Arial" font-size="10" fill="#333">Center Line</text>
+  </g>
+</svg>
